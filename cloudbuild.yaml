@@ -12,7 +12,8 @@ steps:
   - '-r'
   - 'requirements.txt'
 
-  
+
 - name: "gcr.io/cloud-builders/gcloud"
+  id: Gcloud Build
   args: ["app", "deploy"]
 timeout: "1600s"
